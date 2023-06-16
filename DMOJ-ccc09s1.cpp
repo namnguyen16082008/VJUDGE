@@ -14,6 +14,6 @@ int main(){
     cin.tie(NULL);
     cin>>a>>b;
     for (ll i=sqrt(a)+Cp(a);i<=sqrt(b);i++) mp[i*i]++;
-    for (ll i=cbrt(a)+Cp(a);i<=cbrt(b);i++) ans+=mp[i*i*i]==1;
+    for (ll i=cbrt(a);i<=cbrt(b);i++) ans+=mp[i*i*i]==1;
     cout<<ans;
 }
